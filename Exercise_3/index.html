@@ -2,24 +2,149 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <title>Bootstrap document</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="alert alert-info" role="alert">Для навигационной панели boostrap характера структура: </div>
+    <div class="alert alert-success" role="alert">
+      <ul>
+    <li>Навбары требуют «обертки» из классов <code>.navbar</code> и <code>.navbar-expand{-sm|-md|-lg|-xl}</code> для отзывчивости при «складывании»и классы (иначе блок попросту не будет работать), а также классы цветовых схем <code>navbar{-light|-dark|-primary} bg-{-//-}</code>.</li>
+    <li>Навбары и их содержимое по умолчанию занимают 100% ширины. Используйте опциональные контейнеры для ограничения их горизонтальной ширины(<code>container</code>).</li>
+    <li>Используйте наши классы отступов и «флекс» для контроля над пространством и выравниванием внутри навбаров.</li>
+    <li>Навбар перестает работать корректно, если не указана кнопка для ширины экрана менее 768px (<code>button</code>).</li>
+    <li>Навбары отзывчивы по умолчанию, но вы можете легко изменить это. Отзывчивое поведение зависит от нашего «плагина свертывания» JavaScript.</li>
+    <li>Навбары скрыты по умолчанию при печати. Сделайте их печатаемыми, добавив класс <code>.d-print</code> в <code>.navbar</code>. Смотри класс отображения.</li>
+    <li>Придайте им доступность использованием элемента <code>&lt;nav&gt;</code>, или, если используется менее специфический элемент – например <code>&lt;div&gt;</code>: добавьте <code>role="navigation"</code> в каждый навбар для придания ему большей доступности для пользователей вспомогательных технологий.</li>
+    </ul>
+
+    </div>
+    <pre><samp>
+    &lt;nav class="navbar navbar-expand-md navbar-light bg-light"&gt;
+
+    &lt;a href="#" class="navbar-brand"&gt;Brand&lt;/a&gt;
+
+    &lt;button class="navbar-toggler" data-toggle="collapse"
+     data-target="#nav-content"&gt;
+      &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+
+     &lt;div class="collapse navbar-collapse" id="nav-content"&gt;
+      &lt;ul class="navbar-nav"&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a href="#" class="nav-link"&gt;01&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a href="#" class="nav-link"&gt;02&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a href="#" class="nav-link"&gt;03&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+
+  &lt;/nav&gt;
+
+      </samp></pre>
+  </div>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+
+    <a href="#" class="navbar-brand">Brand</a>
+
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-content">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content"
+    aria-controls="nav-content" aria-expanded="false" aria-label="Переключатель навигации">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+-->
+
+    <div class="collapse navbar-collapse" id="nav-content">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="#" class="nav-link">01</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">02</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">03</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
     <div class="container-fluid">
-
+      <div class="navbar-header">
         <a href="#" class="navbar-brand">itProger</a>
+      </div>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-content-02"><span class="navbar-toggler-icon"></span></button>
 
+      <div class="collapse navbar-collapse" id="nav-content-02">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Обратная связь</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">itProger</a>
       <div>
+
+
         <ul class="nav">
+          <!--Ошибка, надо navbar-nav-->
           <li class="nav-item active"><a class="nav-link" href="№">Главная</a></li>
           <li class="nav-item"><a class="nav-link" href="№">О нас</a></li>
           <li class="nav-item"><a class="nav-link" href="№">Обратная связь</a></li>
         </ul>
       </div>
+
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+
 
     </div>
   </nav>
