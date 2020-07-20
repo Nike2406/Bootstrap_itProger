@@ -5,16 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <title>Bootstrap document</title>
-  <style>
-    body {
-      padding: 30px;
-      background: cyan;
-    }
-  </style>
 </head>
 
 <body>
 
+  <div class="container text-center" style="margin-top: 20px">
+    <a href="https://bootstrap-4.ru/docs/4.0/components/forms/" class="btn btn-success">Ссылка на документацию</a>
+  </div><br>
+  <h2>Первая форма</h2>
 
+  <div class="container">
+    <form role="form" action="echo">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Введите e-mail" aria-describedby="someTip">
+        <p class="form-text text-muted" id="some-Tip">Некая подсказка</p>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Введите пароль" aria-describedby="someTipPass">
+        <p class="form-text text-muted" id="some-TipPass">Некая подсказка</p>
+      </div>
+
+      <div class="checkbox">
+        <label for="check-state">
+          <input id="check-state" type="checkbox"> Checkbox
+        </label>
+      </div>
+
+      <button class="btn btn-success">Регистрация</button>
+    </form>
+  </div><br><br>
+
+  <h2>Вторая форма</h2>
+
+  <div class="container" style="margin-top: 40px">
+    <form role="form" action="echo" class="form-horizontal">
+
+      <div class="form-row">
+
+        <div class="form-group col-md-6">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Введите e-mail" aria-describedby="someTip">
+        </div>
+
+        <div class="form-group col-md-6">
+          <label for="password" class="control-label">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Введите пароль" aria-describedby="someTipPass">
+        </div>
+
+      </div>
+
+      <div class="checkbox">
+        <label for="check-state">
+          <input id="check-state" type="checkbox"> Checkbox
+        </label>
+      </div>
+
+      <button class="btn btn-success">Регистрация</button>
+    </form>
+  </div>
 
 </body></html>
