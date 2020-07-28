@@ -19,3 +19,13 @@ body, html {
   font-size: 1.1em !important;
 }
 
+.carousel-inner {
+  max-height: 400px;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+  text-shadow: 1px 1px 10px #000;
+}
