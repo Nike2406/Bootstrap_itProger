@@ -29,3 +29,37 @@ body, html {
   transform: translateY(-70%);
   text-shadow: 1px 1px 10px #000;
 }
+
+.jumbotron {
+padding: 1em;
+  border-radius;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.padding {
+  padding-bottom: 2em;
+}
+
+.alert {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2em;
+}
+
+.alert hr {
+  border-top: 2px solid #f0f0f0;
+  width: 95%;
+  margin-top: 0.3em;
+  margin-bottom: 1em;
+}
+
+.fa-code {color: #e54d26}
+.fa-bold {color: #563d7c}
+.fa-css3-alt {color: #2163af}
+
+.fa-code, .fa-bold, .fa-css3-alt {
+  font-size: 4em;
+  padding-bottom: 5px;
+}

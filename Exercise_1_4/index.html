@@ -11,74 +11,125 @@
 
 <body>
 
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand"><img src="img/logo.png" alt="main-logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-responsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-responsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="#" class="nav-link active">Главная</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Про нас</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Сервисы</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Команда</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="carousel slide" data-ride="carousel" id="mySlides">
+    <ul class="carousel-indicators">
+      <li data-target="#mySlides" data-slide-to="0" class="active"></li>
+      <li data-target="#mySlides" data-slide-to="1"></li>
+      <li data-target="#mySlides" data-slide-to="2"></li>
+      <li data-target="#mySlides" data-slide-to="3"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/carousel_img_1.jpg" alt="1" class="d-block w-100 mx-auto">
+        <div class="carousel-caption">
+          <h2>First</h2>
+          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, reiciendis, quae.</h5>
+          <button class="btn btn-secondary">Посмотреть</button>
+          <button class="btn btn-warning">Демо сайта</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/carousel_img_2.jpg" alt="2" class="d-block w-100">
+        <div class="carousel-caption">
+          <h2>Second</h2>
+          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, reiciendis, quae.</h5>
+          <button class="btn btn-secondary">Посмотреть</button>
+          <button class="btn btn-warning">Демо сайта</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/carousel_img_3.jpg" alt="3" class="d-block w-100">
+        <div class="carousel-caption">
+          <h2>Third</h2>
+          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, reiciendis, quae.</h5>
+          <button class="btn btn-secondary">Посмотреть</button>
+          <button class="btn btn-warning">Демо сайта</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/carousel_img_4.jpg" alt="4" class="d-block w-100">
+        <div class="carousel-caption">
+          <h2>Fourth</h2>
+          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, reiciendis, quae.</h5>
+          <button class="btn btn-secondary">Посмотреть</button>
+          <button class="btn btn-warning">Демо сайта</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="container-fluid">
-    <a href="#" class="navbar-brand"><img src="img/logo.png" alt="main-logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-responsive">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbar-responsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a href="#" class="nav-link active">Главная</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Про нас</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Сервисы</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Команда</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="carousel slide" data-ride="carousel" id="mySlides">
- <ul class="carousel-indicators">
-   <li data-target="#mySlides" data-slide-to="0" class="active"></li>
-   <li data-target="#mySlides" data-slide-to="1"></li>
-   <li data-target="#mySlides" data-slide-to="2"></li>
-   <li data-target="#mySlides" data-slide-to="3"></li>
- </ul>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/carousel_img_1.jpg" alt="1" class="d-block w-100 mx-auto">
-      <div class="carousel-caption">
-        <h2>First</h2>
-        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, reiciendis, quae.</h5>
-        <button class="btn btn-secondary">Посмотреть</button>
-        <button class="btn btn-warning">Демо сайта</button>
+    <div class="row jumbotron">
+      <div class="cik-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, eligendi, nulla. Incidunt eligendi ut tenetur error maxime, expedita porro dicta, at fuga tempore sed, asperiores omnis quaerat, eum aperiam pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis dignissimos ea omnis aspernatur inventore modi officia ratione sed error, dolorum aperiam at quia cupiditate natus officiis illo voluptate dolore, esse.</p>
       </div>
-    </div>
-    <div class="carousel-item">
-      <img src="img/carousel_img_2.jpg" alt="2" class="d-block w-100">
-      <div class="carousel-caption">
-        <h2>Second</h2>
-        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, reiciendis, quae.</h5>
-        <button class="btn btn-secondary">Посмотреть</button>
-        <button class="btn btn-warning">Демо сайта</button>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="img/carousel_img_3.jpg" alt="3" class="d-block w-100">
-      <div class="carousel-caption">
-        <h2>Third</h2>
-        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, reiciendis, quae.</h5>
-        <button class="btn btn-secondary">Посмотреть</button>
-        <button class="btn btn-warning">Демо сайта</button>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="img/carousel_img_4.jpg" alt="4" class="d-block w-100">
-      <div class="carousel-caption">
-        <h2>Fourth</h2>
-        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, reiciendis, quae.</h5>
-        <button class="btn btn-secondary">Посмотреть</button>
-        <button class="btn btn-warning">Демо сайта</button>
+      <div class="cik-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+        <a href="#"><button class="btn btn-success btn-lg">Читать далее</button></a>
       </div>
     </div>
   </div>
-</div>
+
+  <div class="container-fluid">
+    <div class="row text-center alert">
+      <div class="col-12">
+        <h1 class="dispalay-4">Создание сайтов
+        </h1>
+      </div>
+
+  <hr>
+      <div class="col-12">
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero sunt illum, accusamus eum saepe quibusdam repellendus quis, doloribus atque dolores nam numquam deserunt debitis, hic similique aperiam labore ducimus voluptates quam cumque sit ratione soluta vel voluptatem! Omnis, temporibus, facilis.</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <div class="container-fluid padding">
+    <div class="row text-center padding justify-content-center">
+
+      <div class="col-sm-6 col-md-4">
+        <i class="fas fa-code"></i>
+        <h3>HTML5</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti animi hic consequatur impedit quia velit illo pariatur delectus sed eius esse dolore nostrum, reiciendis ullam nihil nulla natus harum assumenda.</p>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <i class="fas fa-bold"></i>
+        <h3>Bootstrap</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti animi hic consequatur impedit quia velit illo pariatur delectus sed eius esse dolore nostrum, reiciendis ullam nihil nulla natus harum assumenda.</p>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti animi hic consequatur impedit quia velit illo pariatur delectus sed eius esse dolore nostrum, reiciendis ullam nihil nulla natus harum assumenda.</p>
+      </div>
+
+    </div>
+    <hr class="my-4">
+  </div>
 
 
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body></html>
